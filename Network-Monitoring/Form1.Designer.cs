@@ -35,13 +35,14 @@
             button2 = new Button();
             listBox1 = new ListBox();
             linkLabel1 = new LinkLabel();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(97, 28);
+            label1.Location = new Point(110, 28);
             label1.Name = "label1";
             label1.Size = new Size(78, 20);
             label1.TabIndex = 0;
@@ -50,7 +51,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(188, 26);
+            textBox1.Location = new Point(201, 26);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(129, 27);
             textBox1.TabIndex = 1;
@@ -60,9 +61,9 @@
             button1.AutoSize = true;
             button1.BackColor = Color.LimeGreen;
             button1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(97, 78);
+            button1.Location = new Point(93, 78);
             button1.Name = "button1";
-            button1.Size = new Size(83, 31);
+            button1.Size = new Size(68, 31);
             button1.TabIndex = 2;
             button1.Text = "Ping";
             button1.UseVisualStyleBackColor = false;
@@ -73,9 +74,9 @@
             // 
             button2.BackColor = Color.DarkOrange;
             button2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(242, 78);
+            button2.Location = new Point(196, 78);
             button2.Name = "button2";
-            button2.Size = new Size(75, 31);
+            button2.Size = new Size(68, 31);
             button2.TabIndex = 3;
             button2.Text = "Reset";
             button2.UseVisualStyleBackColor = false;
@@ -89,24 +90,37 @@
             listBox1.ItemHeight = 17;
             listBox1.Location = new Point(11, 133);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(395, 206);
+            listBox1.Size = new Size(432, 206);
             listBox1.TabIndex = 4;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(288, 352);
+            linkLabel1.Location = new Point(326, 352);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(121, 15);
             linkLabel1.TabIndex = 5;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Developed by P@PPu";
             // 
+            // button3
+            // 
+            button3.BackColor = Color.Turquoise;
+            button3.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Location = new Point(293, 78);
+            button3.Name = "button3";
+            button3.Size = new Size(68, 31);
+            button3.TabIndex = 6;
+            button3.Text = "New";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(418, 374);
+            ClientSize = new Size(455, 374);
+            Controls.Add(button3);
             Controls.Add(linkLabel1);
             Controls.Add(listBox1);
             Controls.Add(button2);
@@ -130,5 +144,6 @@
         private Button button2;
         private ListBox listBox1;
         private LinkLabel linkLabel1;
+        private Button button3;
     }
 }
